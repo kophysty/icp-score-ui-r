@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { WalletProvider } from './context/WalletContext';
 import { ScoreProvider } from './context/ScoreContext';
 import HomePage from './pages/HomePage';
-// Другие импорты страниц, если они есть
+// Other imports
+
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <ScoreProvider>
           <Switch>
             <Route path="/" exact component={HomePage} />
-            {/* Другие маршруты, если они нужны */}
+            {/* other routes if needed */}
           </Switch>
         </ScoreProvider>
       </WalletProvider>
